@@ -14,4 +14,9 @@ export class ProductosComponent implements OnInit {
   ngOnInit(): void {
     console.log( this.arrayCursos )
   }
+
+  convertArray( valor:any ){
+    let valorArrayy = Object.values( valor );
+    return valorArrayy;
+  }
 }

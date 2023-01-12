@@ -1,10 +1,10 @@
 <li *ngFor="let curso of arrayCursos">
   <div>
-    <h3>{{ curso }}</h3>
-    <h5></h5>
+    <h3>{{convertArray(curso)[0]}}</h3>
+    <h5>{{convertArray(curso)[1]}}</h5>
   </div>
   <div>
-    <button>DELETE</button>
+    <button id="{{convertArray(curso)[2]}}">DELETE</button>
   </div>
 </li>
 <div class="controlers">

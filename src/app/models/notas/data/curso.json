@@ -1,10 +1,24 @@
-{
-  "0":{
-    "hola": "hola",
-    "hola2": "Holaa"
+[
+  {
+    "title": "FirstNote in this program",
+    "notaDescription": "Esta es mi primera nota en esta app",
+    "id": 0
   },
-  "1":{
-    "hola": "hola",
-    "hola2": "Holaa"
+  {
+    "title": "Second note in this program",
+    "notaDescription": "Segunda nota que escribiré para probarlo",
+    "id": 1
+
+  },
+  {
+    "title": "Second note in this program",
+    "notaDescription": "Segunda nota que escribiré para probarlo",
+    "id": 2
+  },
+  {
+    "title": "Second note in this program",
+    "notaDescription": "Segunda nota que escribiré para probarlo",
+    "id": 3
   }
-}
+
+]
