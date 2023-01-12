@@ -1,0 +1,10 @@
+.main{
+  height: 100vh;
+  display: flex;
+}
+.main div{
+  width: 20%;
+}
+.main div:last-child{
+  width: 80%;
+}

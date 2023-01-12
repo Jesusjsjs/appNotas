@@ -1,0 +1,11 @@
+.menu-header{
+  display: flex;
+  justify-content: end;
+  color: white;
+  font-family: Helvetica;
+  background-color: #232323;
+}
+.menu-header h4{
+  font-weight: 300;
+  margin: 20px;
+}

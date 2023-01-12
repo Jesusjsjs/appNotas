@@ -1,0 +1,14 @@
+<div>
+  <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm)">
+
+    <label for="nameNote">Escribe el title de tu nota:</label>
+    <input formControlName="title" id="nameNote">
+
+    <label for="descriptionNote">Escribe la descripción de la nota:</label>
+    <input formControlName="nota" id="descriptionNote">
+
+    <button type="submit">SUBIR NOTA</button>
+  </form>
+
+</div>
+
