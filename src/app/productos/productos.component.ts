@@ -1,19 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-const data = require('../models/notas/data/curso.json');
-
-
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-productos',
   templateUrl: './productos.component.html',
   styleUrls: ['./productos.component.css']
 })
-export class ProductosComponent implements OnInit {
 
-  arrayCursos = Object.values( data );
-  ngOnInit(): void {
-    console.log( this.arrayCursos )
+export class ProductosComponent implements OnInit {
+  @Input() productoInChild: object;
+
+  Object = Object;
+  constructor(){
+    this.productoInChild = {};
   }
+
+  ngOnInit(): void {}
+
 
   convertArray( valor:any ){
     let valorArrayy = Object.values( valor );

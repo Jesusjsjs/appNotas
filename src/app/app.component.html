@@ -1,9 +1,14 @@
 <app-menu-header></app-menu-header>
 <div class="main">
   <div class="first">
-    <menu-tools></menu-tools>
+    <menu-tools
+    [productoInChild]="object"
+    >
+  </menu-tools>
   </div>
   <div>
-    <app-productos></app-productos>
+    <app-productos
+      [productoInChild]="object"
+    ></app-productos>
   </div>
 </div>

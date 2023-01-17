@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 let data = require( '../models/notas/data/curso.json' )
 
@@ -15,19 +15,24 @@ export class MenuToolsComponent implements OnInit {
 
   loginForm = new FormGroup({
     title: new FormControl('', Validators.required),
-    nota: new FormControl('', Validators.required)
+    description: new FormControl('', Validators.required)
   })
+
+  @Input() productoInChild : any;
 
 
   cursoArray = Object.values( data );
 
-  constructor() { }
+  constructor() {
+    this.productoInChild ={};
+  }
+  element = {}
 
   ngOnInit(): void {}
 
   onLogin(formulario: any){
-    this.cursoArray.push(formulario);
-    console.log(  this.cursoArray );
+    this.productoInChild.push( formulario.value );
+    console.log( this.productoInChild );
   }
 
 
